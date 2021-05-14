@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <local:MyTable x:Name="chessTable">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Width="100" Height="100" Name="b0" Click="Choose"></Button>
+        <Button Grid.Row="0" Grid.Column="1" Width="100" Height="100" Name="b1" Click="Choose"></Button>
+        <Button Grid.Row="0" Grid.Column="2" Width="100" Height="100" Name="b2" Click="Choose"></Button>
+        <Button Grid.Row="1" Grid.Column="0" Width="100" Height="100" Name="b3" Click="Choose"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Width="100" Height="100" Name="b4" Click="Choose"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Width="100" Height="100" Name="b5" Click="Choose"></Button>
+        <Button Grid.Row="2" Grid.Column="0" Width="100" Height="100" Name="b6" Click="Choose"></Button>
+        <Button Grid.Row="2" Grid.Column="1" Width="100" Height="100" Name="b7" Click="Choose"></Button>
+        <Button Grid.Row="2" Grid.Column="2" Width="100" Height="100" Name="b8" Click="Choose"></Button>
+        
+    </local:MyTable>
+</Window>
